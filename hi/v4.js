@@ -5,7 +5,7 @@ http.createServer(function(request, response){
   if(request.url === '/'){
     response.write('hi man');
   }else{
-    response.write('<style>.blue {color:#0066ff}</style><h1 class="blue">' + '您好，' + decodeURI(request.url.slice(1)) + '，请看图片：' +'</h1><img src="http://t.cn/Ry31ULY">');
+    response.write('<style>.blue {color:#0066ff}</style><h1 class="blue">' + '您好，' + decodeURI(request.url.slice(1)) + '，请看图片：</h1><img src="http://t.cn/Ry31ULY">');
   }
   response.end();
 }).listen(8888);
