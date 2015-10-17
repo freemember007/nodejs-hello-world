@@ -10,4 +10,4 @@ http.createServer(function(request, response){
   response.end();
 }).listen(8888);
 
-console.log('服务器已启动，地址为：http://localhost:8888');
+console.log('服务器已启动，地址为：http://localhost:8888'); 
