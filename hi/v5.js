@@ -2,7 +2,7 @@
 var http = require('http');
 http.createServer(function(request, response){
   response.writeHead(200);
-  response.write('{'name':'xjp'; 'gender':'male'}');
+  response.write("{'name':'xjp'; 'gender':'male'}");
   response.end();
 }).listen(8888);
 

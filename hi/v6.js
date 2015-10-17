@@ -1,4 +1,4 @@
-// GET/POST 及完整注解
+// GET/POST 及注释
 
 // 引入模块
 var http = require('http');
@@ -13,18 +13,18 @@ http.createServer(function(request, response){
   console.log(request.method)
 
   // 打印GET参数 
-  var params = require("url").parse(request.url, true).query; //true参数将查询字符串转换为json对象
+  var params = require('url').parse(request.url, true).query; 
   console.log(params);
 
   // 路由
   if(request.url === '/'){
-    response.write("{'name':'xjp'; 'gender':'man'}");
+    response.write('hi man');
   }else{
-    response.write("{'name':" + decodeURI(request.url.slice(1)) +  "; 'gender':'man'}");
+    response.write('hi ' + decodeURI(request.url.slice(1)) + '!');
   }
 
   // 打印POST数据
-  var postData = "";
+  var postData = '';
   request.on('data',function(chunk){
     postData += chunk;
   });
@@ -38,6 +38,6 @@ http.createServer(function(request, response){
   // 注册端口
 }).listen(8888);
 
-// 服务器启动log
+// log
 console.log('服务器已启动，地址为：http://localhost:8888');
 
