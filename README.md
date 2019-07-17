@@ -1,14 +1,17 @@
+# nodejs-hello-world
+
+## 如何开始
+
 1.下载安装node.js
 http://nodejs.org/
 
 2.打开命令行，输入
 node -v
-显示“v0.12.4”即安装成功。
+显示版本号即安装成功。
 
-3.新建目录hi和第一个程序文件v1.js
-用任何你喜欢的文本编程器打开该文件，写上一句代码：
-console.log('hi man')
+3.克隆本项目
+```bash
+git clone https://github.com/freemember007/nodejs-hello-world
+```
 
-4.CD至目录hi，执行
-node v1
-显示“hi man”即完成用nodejs写的第一个应用程序。
+4.打开v*.js文件，按页面提示操作。
